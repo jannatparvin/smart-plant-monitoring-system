@@ -5,7 +5,7 @@ Developed as a B.Tech 4th Semester Mini Project (EE2191) at the **Department of 
 
 ---
 
-## 📋 Overview
+## Overview
 
 Traditional gardening and small-scale farming often suffer from inconsistent watering and delayed detection of nutrient or health issues. This project addresses that with a low-cost, ESP32-based system that continuously monitors three core plant health vectors:
 
@@ -17,7 +17,7 @@ The system uses a **distributed processing model**: the ESP32 handles real-time 
 
 ---
 
-## ✨ Features
+## Features
 
 - **Autonomous Irrigation (Mode 0)** — Hysteresis-based control (pump ON below 30% moisture, OFF above 70%) to prevent relay flicker and overwatering.
 - **Soil Health Logger (Mode 1)** — Fuses 6 local sensor readings (moisture, air temp, humidity, light, EC, soil temp) with an optional 7th parameter (pH) pushed from LabVIEW, and produces a combined diagnostic string.
@@ -28,7 +28,7 @@ The system uses a **distributed processing model**: the ESP32 handles real-time 
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
  Sensing Layer                Processing Layer              Cloud / UI Layer
@@ -51,7 +51,7 @@ The system uses a **distributed processing model**: the ESP32 handles real-time 
 
 ---
 
-## 🔧 Hardware Components
+## Hardware Components
 
 | Component | Function |
 |---|---|
@@ -68,7 +68,7 @@ Full Bill of Materials is in the [project report](./docs/Smart_Plant_Monitoring_
 
 ---
 
-## 💻 Software Stack
+## Software Stack
 
 | Layer | Tool | Role |
 |---|---|---|
@@ -78,7 +78,7 @@ Full Bill of Materials is in the [project report](./docs/Smart_Plant_Monitoring_
 
 ---
 
-## 📌 Blynk Virtual Pin Map
+## Blynk Virtual Pin Map
 
 | Pin | Parameter | Type | Source |
 |---|---|---|---|
@@ -97,7 +97,7 @@ Full Bill of Materials is in the [project report](./docs/Smart_Plant_Monitoring_
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 smart-agriculture-hub/
@@ -115,7 +115,7 @@ smart-agriculture-hub/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone this repo:
    ```bash
@@ -132,19 +132,19 @@ smart-agriculture-hub/
 5. Set up the Blynk template using the Virtual Pin map above, and create your dashboard widgets.
 6. Run the LabVIEW VIs on a local PC pointed at the ESP32-CAM's stream URL.
 
-> ⚠️ Never commit `secrets.h` — it's already excluded via `.gitignore`.
+
 
 ---
 
-## 📊 Results
+## Results
 
-- Sensor accuracy validated against commercial instruments: **95.5%–99.5%** across pH, EC, temperature, and moisture (see report §10.2).
+- Sensor accuracy validated against commercial instruments: **95.5%–99.5%** across pH, EC, temperature, and moisture.
 - Hysteresis irrigation logic reliably activated/deactivated at the 30%/70% moisture thresholds with no relay flicker.
 - Deep Sleep routines significantly reduced average current draw for field/battery viability.
 
 ---
 
-## 🔭 Future Scope
+## Future Scope
 
 - Machine learning–based predictive irrigation and disease classification
 - LoRa mesh networking for multi-acre / multi-node deployment
@@ -154,7 +154,7 @@ smart-agriculture-hub/
 
 ---
 
-## 👥 Team — Green Revolution
+## Team — Green Revolution
 
 - Aaryan Raj Gond (2024EEB033)
 - Eepuri Srikavya (2024EEB047)
