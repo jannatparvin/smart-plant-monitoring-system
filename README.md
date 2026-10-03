@@ -144,6 +144,9 @@ smart-agriculture-hub/
 
 ---
 
+![Labview Diagram](LABVIEW_diagram.jpg)
+![Blynk Dashboard](blynk_dashboard_image.jpg)
+
 ## Future Scope
 
 - Machine learning–based predictive irrigation and disease classification
