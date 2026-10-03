@@ -132,9 +132,10 @@ smart-agriculture-hub/
 5. Set up the Blynk template using the Virtual Pin map above, and create your dashboard widgets.
 6. Run the LabVIEW VIs on a local PC pointed at the ESP32-CAM's stream URL.
 
-
+![Labview Diagram](LABVIEW_diagram.jpg)
 
 ---
+
 
 ## Results
 
@@ -144,7 +145,7 @@ smart-agriculture-hub/
 
 ---
 
-![Labview Diagram](LABVIEW_diagram.jpg)
+
 ![Blynk Dashboard](blynk_dashboard_image.jpg)
 
 ## Future Scope
